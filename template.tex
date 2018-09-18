@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Computer}\\\textbf{Engineering},
+        \textbf{Embedded}\\\textbf{Systems},
+        \textbf{Computer}\\\textbf{Architecture},
+        \textbf{~~~~~~VLSI~~~~~~}\\\textbf{~~Design~~},
+        \textbf{~~~~~~~~IoT~~~~~~~~~}
+    }
+}
+
+% Programming skill bars
+\programming{
+{HTML $\textbullet$ CSS $\textbullet$ SQL $\textbullet$ NodeJS /3}, 
+{Java $\textbullet$ Python $\textbullet$ JavaScript /4}, 
+{C $\textbullet$ C++ $\textbullet$ Verilog $\textbullet$ MATLAB / 5}}
+
+% Projects text
+\education{
+\textbf{Ph.D., Computer Engineering}  \\
+Iowa State University\\
+2018 - 2023 | Ames, Iowa
+
+\textbf{MS., Computer Engineering} (GPA: 3.88) \\
+California State University, Fresno \\
+2014 - 2016 | California
+
+\textbf{M.Tech., Microelectronics and VLSI Design} (GPA: 3.77) \\
+Kurukshetra University \\
+2011 - 2013 | Haryana, India
+
+\textbf{B.Tech., Electronics and Communication Engineering} \\
+Kurukshetra University \\
+2006 - 2010 | Haryana, India
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{VISHAL DEEP} % Your name
+\cvjobtitle{ } % Job
+% title/career
+
+\cvlinkedin{/in/vishaldeep15}
+\cvgithub{}
+\cvnumberphone{(559) 475 3777} % Phone number
+\cvmail{visdhiman15@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+ 
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Feb 2017 -}
+		{Aug 2017}
+        {Embedded System Programmer}
+        {\href{https://www.dpstele.com/}{DPS Telecom}}
+        {}
+        {\begin{itemize}
+        \item Developed firmware for remote monitoring devices (use PIC32 microcontroller) using C/C++.
+        \item Developed web page associated with these devices using HTML, CSS, JavaScript.
+        \item Rapid prototyping using Arduino and Raspberry pie.
+        \item Developed and maintained remote monitoring server “T/MON LNX” event log database using MySQL.
+        \item Worked with Oscilloscopes, Spectrum Analyzers, Logic Analyzers, Protocol Analyzers, and JTAG Debuggers.
+        \item Tested manufactured devices for operating temperatures and EMI radiations.
+        \end{itemize}}
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2018 - }
+		{}
+        {Research Assistant}
+        {\href{https://www.iastate.edu/}{Iowa State University}}
+        {}
+        {
+        {\begin{itemize}
+        \item Surveying on architectural challenges of intermittent devices. 
+        \item Studying Non-volatile processor architecture.\vspace{2mm}
+		\end{itemize}}
+        }
+        
+    \twentyitem
+    	{2015 - 2016}
+		{}
+        {Research Assistant}
+        {\href{https://www.fresnostate.edu/engineering/elec-computer/}{Fresno State}}
+        {}
+        {
+        {\begin{itemize}
+        \item \textbf{Thesis:} Designed Intra-Prediction block of HEVC using MATLAB for video processing application. Implemented 35 intra-modes on luma and chroma components of a picture.
+\item Worked on embedding sensor’s data from a smart-phone and utilizing it to aid GPS receiver for better positioning using MATLAB. 
+        \item Developed algorithm to predict path where GPS signals are not available using IMU sensors of a smart-phones in MATLAB. 
+      	%\vspace{2mm}
+		\end{itemize}}
+        }
+        
+        
+\end{twenty}
+
+\section{Projects}
+\begin{twenty}
+%\twentyitem{}{<title>}{<location>}{<description>}
+	\twentyitem
+    	{2015 - 2016}
+		{}
+        {Design of Zigbee Transmitter using Verilog}
+        {\href{https://www.fresnostate.edu/engineering/elec-computer/}{Fresno State}}
+        {}
+        {
+        {\begin{itemize}
+        \item Designed and simulated state-of-art ZigBee Transmitter for IoT Wireless Devices.
+        \item Synthesized four blocks of ZigBee transmitter viz. CRC, bit-to-symbol, symbol-to-chip, and OQPSK modulator using Verilog HDL in Xilinx Vivado.
+		\end{itemize}} \vspace{2mm}
+        }
+        
+    \twentyitem
+    	{2015 }
+		{}
+        {Digital Slot Machine}
+        {\href{https://www.fresnostate.edu/engineering/elec-computer/}{Fresno State}}
+        {}
+        {
+        {\begin{itemize}
+\item Developed a Digital Slot Machine on Altera DE2 115 FPGA board using µC/OS RTOS in C/C++. 
+        \item Interfaced VGA monitor and LCD on board. \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+
+\section{Selected Publications}
+\href{https://ieeexplore.ieee.org/document/7946796/}{V. Deep, T. Elarabi, " HEVC/H.265 vs. VP9 State-Of-The-Art Video Coding Comparison for HD and UHD Applications" in  30th Canadian Conference on Electrical and Computer Engineering (CCECE) (CCECE 2017), Windsor, Ontario, Canada, 2017. }
+\vspace{2mm} \\
+\href{https://ieeexplore.ieee.org/document/7748482/}{A. Suprem, V. Deep, and T. Elarabi, "Orientation and Displacement Detection for Smartphone Device Based IMUs," IEEE Access, 2016.}
+\vspace{2mm} \\
+\href{https://ieeexplore.ieee.org/document/7394347/}{V. Deep, and C. K. Rai, T. Elarabi, “Design and simulation of state-of-art ZigBee transmitter for IoT wireless devices," in 2015 IEEE International Symposium on Signal Processing and Information Technology (ISSPIT), 2015, pp. 297 - 300. }
+
+\section{Awards and Honors}
+\begin{itemize}
+\item Awarded graduate Dean’s Medal for class of 2016 at Fresno State.
+\item Honored as outstanding student of Lyles College of Engineering.
+\end{itemize}
+
+\end{document} 
